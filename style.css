@@ -19,7 +19,7 @@ body {
 /* Haut de page */
 
 header {
-    background: linear-gradient(to right, #35173f, #172f5c);  /* Dégradé de couleur du haut de page */
+    background: linear-gradient(to right, #35173f, #172f5c); /* Dégradé de couleur du haut de page */
     padding: 80px 7% 35px 7%;
 }
 
@@ -72,7 +72,7 @@ header p {
     border: 1px solid #e0b4f6;
     padding: 10px;
     margin-right: 20px;
-    text-decoration: none;   /* Supprime le soulignement */
+    text-decoration: none; /* Supprime le soulignement */
 }
 
 
@@ -133,6 +133,7 @@ main img {
 
     /* Centre le texte verticalement par rapport à l'image */
     align-items: center;
+
     gap: 40px;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -149,6 +150,7 @@ main img {
 
     /* Centre le texte verticalement par rapport à l'image */
     align-items: center;
+
     gap: 40px;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -160,6 +162,7 @@ main img {
 .image-large {
     /* Centre l'image et sa légende */
     text-align: center;
+
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -177,6 +180,7 @@ main img {
 .image-equipe {
     /* Centre l'image et sa légende */
     text-align: center;
+
     margin-top: 50px;
     margin-bottom: 60px;
 }
@@ -196,11 +200,12 @@ main img {
     font-size: 15px;
 }
 
+
 /* Sources */
 
 .sources a {
     color: #df4aa5;
-    display: block;      /* chaque lien prend sa propre ligne */
+    display: block; /* Chaque lien prend sa propre ligne */
     margin-bottom: 10px;
 }
 
@@ -235,11 +240,77 @@ footer p {
     color: #f2bff4;
 }
 
-/* Version téléphone */
+
+/* ------------------------- */
+/* VERSION TÉLÉPHONE         */
+/* ------------------------- */
 
 @media (max-width: 600px) {
 
-    /* Les images et le texte passent l'un sous l'autre */
+    /* Haut de page */
+
+    header {
+        padding: 40px 6% 30px 6%;
+    }
+
+
+    /* Titre principal */
+
+    h1 {
+        font-size: 32px;
+        display: block;
+    }
+
+
+    /* Logo Atari ST */
+
+    h1 img {
+        width: 200px;
+        display: block;
+    }
+
+
+    /* Sous-titre */
+
+    .header-analyse p,
+    .header-experience p {
+        margin-top: -50px;
+        font-size: 18px;
+    }
+
+
+    /* Boutons du menu */
+
+    .bouton {
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+
+    /* Contenu */
+
+    main {
+        width: 88%;
+    }
+
+
+    /* Titres des parties */
+
+    h2 {
+        font-size: 22px;
+    }
+
+
+    /* Texte */
+
+    p {
+        font-size: 16px;
+    }
+
+
+    /* Les images et les textes passent l'un sous l'autre */
 
     .image-gauche,
     .image-droite {
@@ -247,10 +318,17 @@ footer p {
     }
 
 
-    /* Les images s'adaptent à la largeur du téléphone */
+    /* Images adaptées à la largeur du téléphone */
 
     main img {
         width: 100%;
     }
 
+
+    /* Grandes images adaptées au téléphone */
+
+    .image-large img,
+    .image-equipe img {
+        width: 100%;
+    }
 }
