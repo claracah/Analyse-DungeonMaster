@@ -65,29 +65,42 @@ header p {
 }
 
 
-/* Boutons du menu */
+/* Tous les boutons */
 
-.bouton {
-    color: #e0b4f6;
-    border: 1px solid #e0b4f6;
+.bouton,
+.lien-bas a {
+    color: #f510fd;
+    border: 1px solid #f510fd;
     padding: 10px;
-    margin-right: 20px;
-    text-decoration: none; /* Supprime le soulignement */
+    text-decoration: none;
 
-    /* Permet au bouton de bouger correctement */
+    /* Permet au bouton de bouger */
     display: inline-block;
 
-    /* Rend le changement de couleur fluide */
+    /* Rend l'animation fluide */
     transition: 0.3s;
 }
 
 
-/* Quand la souris passe sur un bouton */
+/* Espace entre les boutons du haut */
 
-.bouton:hover {
-    color: #35173f;
-    background-color: #e0b4f6;
-    border-color: #e0b4f6;
+.bouton {
+    margin-right: 20px;
+}
+
+
+/* Animation des boutons de la page */
+
+.bouton:hover,
+.lien-bas a:hover {
+    /* Change la couleur du texte */
+    color: #fdadeb;
+
+    /* Change la couleur du fond */
+    background-color: #ff65ad;
+
+    /* Change la couleur de la bordure */
+    border-color: #ff65ad;
 
     /* Fait légèrement monter le bouton */
     transform: translateY(-3px);
@@ -233,32 +246,6 @@ main img {
 .lien-bas {
     margin-top: 60px;
     margin-bottom: 30px;
-}
-
-
-.lien-bas a {
-    color: #f510fd;
-    border: 1px solid #f510fd;
-    padding: 12px;
-    text-decoration: none;
-
-    /* Permet au bouton de bouger correctement */
-    display: inline-block;
-
-    /* Rend l'animation fluide */
-    transition: 0.3s;
-}
-
-
-/* Quand la souris passe sur le bouton du bas */
-
-.lien-bas a:hover {
-    color: #35173f;
-    background-color: #f510fd;
-    border-color: #f510fd;
-
-    /* Fait légèrement monter le bouton */
-    transform: translateY(-3px);
 }
 
 
