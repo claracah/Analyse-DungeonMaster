@@ -70,7 +70,7 @@ header p {
 .bouton,
 .lien-bas a {
     color: #f510fd;
-    border: 1px solid #f510fd;
+    border: 1px solid #77017b;
     padding: 10px;
     text-decoration: none;
 
@@ -94,24 +94,26 @@ header p {
 .bouton:hover,
 .lien-bas a:hover {
     /* Change la couleur du texte */
-    color: #ffddf7;
+    color: #ffc0f0;
 
     /* Change la couleur du fond */
-    background-color: #ff2790;
+    background-color: #ff007b;
 
-    /* Change la couleur de la bordure */
-    border-color: #ff65ad;
+    /* Change la couleur de la bordure et l'épaissie */
+
+    border: 3px solid #ffc0f0;
 
     /* Fait légèrement monter le bouton */
-    transform: translateY(-3px);
+    transform: translateY(-px);
+
 }
 
 
 /* Bouton de la page actuelle */
 
 .actif {
-    color: #f510fd;
-    border-color: #f510fd;
+    color: #ff007b;
+    border-color: #f8739d;
     font-weight: bold;
 }
 
