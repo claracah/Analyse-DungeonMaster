@@ -74,17 +74,20 @@ header p {
     margin-right: 20px;
     text-decoration: none; /* Supprime le soulignement */
 
-    /* Rend l'animation fluide */
+    /* Permet au bouton de bouger correctement */
+    display: inline-block;
+
+    /* Rend le changement de couleur fluide */
     transition: 0.3s;
 }
 
 
-/* Animation des boutons */
+/* Quand la souris passe sur un bouton */
 
 .bouton:hover {
-    color: white;
-    background-color: #f510fd;
-    border-color: #f510fd;
+    color: #35173f;
+    background-color: #e0b4f6;
+    border-color: #e0b4f6;
 
     /* Fait légèrement monter le bouton */
     transform: translateY(-3px);
@@ -239,17 +242,20 @@ main img {
     padding: 12px;
     text-decoration: none;
 
-    /* Rend l'animation fluide */
+    /* Permet au bouton de bouger correctement */
     display: inline-block;
+
+    /* Rend l'animation fluide */
     transition: 0.3s;
 }
 
 
-/* Animation du bouton en bas de page */
+/* Quand la souris passe sur le bouton du bas */
 
 .lien-bas a:hover {
-    color: white;
+    color: #35173f;
     background-color: #f510fd;
+    border-color: #f510fd;
 
     /* Fait légèrement monter le bouton */
     transform: translateY(-3px);
