@@ -94,10 +94,10 @@ header p {
 .bouton:hover,
 .lien-bas a:hover {
     /* Change la couleur du texte */
-    color: #fdadeb;
+    color: #ffddf7;
 
     /* Change la couleur du fond */
-    background-color: #ff65ad;
+    background-color: #ff2790;
 
     /* Change la couleur de la bordure */
     border-color: #ff65ad;
