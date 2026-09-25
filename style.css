@@ -122,7 +122,7 @@ main img {
     border-radius: 10px;
 
     /* Ajoute un trait blanc fin autour de l'image */
-    border: 1px solid white;
+    border: 3px solid white;
 }
 
 
@@ -131,7 +131,7 @@ main img {
 .image-gauche {
     display: flex;
 
-    /* Centre le texte verticalement par rapport à l'image */
+    /* Centre le texte par rapport à l'image */
     align-items: center;
 
     gap: 40px;
@@ -148,7 +148,7 @@ main img {
     /* Met l'image à droite et le texte à gauche */
     flex-direction: row-reverse;
 
-    /* Centre le texte verticalement par rapport à l'image */
+    /* centrer le texte par rapport à l'image */
     align-items: center;
 
     gap: 40px;
@@ -241,9 +241,8 @@ footer p {
 }
 
 
-/* ------------------------- */
-/* VERSION TÉLÉPHONE         */
-/* ------------------------- */
+/*Version Téléphone*/
+
 
 @media (max-width: 600px) {
 
