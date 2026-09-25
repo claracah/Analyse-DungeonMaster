@@ -234,3 +234,23 @@ footer p {
     font-size: 10px;
     color: #f2bff4;
 }
+
+/* Version téléphone */
+
+@media (max-width: 600px) {
+
+    /* Les images et le texte passent l'un sous l'autre */
+
+    .image-gauche,
+    .image-droite {
+        display: block;
+    }
+
+
+    /* Les images s'adaptent à la largeur du téléphone */
+
+    main img {
+        width: 100%;
+    }
+
+}
