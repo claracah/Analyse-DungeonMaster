@@ -73,6 +73,21 @@ header p {
     padding: 10px;
     margin-right: 20px;
     text-decoration: none; /* Supprime le soulignement */
+
+    /* Rend l'animation fluide */
+    transition: 0.3s;
+}
+
+
+/* Animation des boutons */
+
+.bouton:hover {
+    color: white;
+    background-color: #f510fd;
+    border-color: #f510fd;
+
+    /* Fait légèrement monter le bouton */
+    transform: translateY(-3px);
 }
 
 
@@ -121,7 +136,7 @@ main img {
     /* Arrondit les coins de l'image */
     border-radius: 10px;
 
-    /* Ajoute un trait blanc fin autour de l'image */
+    /* Ajoute un trait blanc autour de l'image */
     border: 3px solid white;
 }
 
@@ -148,7 +163,7 @@ main img {
     /* Met l'image à droite et le texte à gauche */
     flex-direction: row-reverse;
 
-    /* centrer le texte par rapport à l'image */
+    /* Centre le texte par rapport à l'image */
     align-items: center;
 
     gap: 40px;
@@ -223,6 +238,21 @@ main img {
     border: 1px solid #f510fd;
     padding: 12px;
     text-decoration: none;
+
+    /* Rend l'animation fluide */
+    display: inline-block;
+    transition: 0.3s;
+}
+
+
+/* Animation du bouton en bas de page */
+
+.lien-bas a:hover {
+    color: white;
+    background-color: #f510fd;
+
+    /* Fait légèrement monter le bouton */
+    transform: translateY(-3px);
 }
 
 
@@ -241,8 +271,7 @@ footer p {
 }
 
 
-/*Version Téléphone*/
-
+/* Version Téléphone */
 
 @media (max-width: 600px) {
 
