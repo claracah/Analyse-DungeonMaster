@@ -9,7 +9,7 @@
 /* Page */
 
 body {
-    background: linear-gradient(to right, #35173f, #172f5c); /* Dégradé de couleur du fond de la page */
+    background: linear-gradient(to right, #35173f, #172f5c);
     color: white;
     font-family: "Oswald";
     margin: 0;
@@ -19,7 +19,7 @@ body {
 /* Haut de page */
 
 header {
-    background: linear-gradient(to right, #35173f, #172f5c); /* Dégradé de couleur du haut de page */
+    background: linear-gradient(to right, #35173f, #172f5c);
     padding: 80px 7% 35px 7%;
 }
 
@@ -31,13 +31,9 @@ h1 {
     font-weight: bold;
     margin: 0;
 
-    /* Met le texte et le logo sur la même ligne */
+    /* Place le titre et le logo sur la même ligne */
     display: flex;
-
-    /* Aligne verticalement le texte et le logo au centre */
     align-items: center;
-
-    /* Ajoute un espace de 20px entre le titre et le logo */
     gap: 20px;
 }
 
@@ -49,7 +45,7 @@ h1 img {
 }
 
 
-/* Petit texte sous le titre */
+/* Sous-titre */
 
 header p {
     font-size: 25px;
@@ -58,7 +54,7 @@ header p {
 }
 
 
-/* Remonte le sous-titre sous le logo sur les deux pages */
+/* Remonte le sous-titre sous le logo */
 
 .header-analyse p,
 .header-experience p {
@@ -66,7 +62,7 @@ header p {
 }
 
 
-/* Tous les boutons */
+/* Boutons */
 
 .bouton,
 .lien-bas a {
@@ -75,10 +71,10 @@ header p {
     padding: 10px;
     text-decoration: none;
 
-    /* Garde les boutons sur la même ligne tout en pouvant modifier leur taille et leur espacement */
+    /* Permet de garder la forme du bouton tout en restant sur la même ligne */
     display: inline-block;
 
-    /* Rend les changements du bouton progressifs pendant 0,3 seconde */
+    /* Rend l'animation du bouton plus fluide */
     transition: 0.3s;
 }
 
@@ -90,37 +86,27 @@ header p {
 }
 
 
-/* Animation des boutons de la page */
+/* Animation au survol des boutons */
 
 .bouton:hover,
 .lien-bas a:hover {
-
-    /* Change la couleur du texte */
     color: #ffc0f0;
-
-    /* Change la couleur du fond */
     background-color: #ff007b;
-
-    /* Change la couleur de la bordure et l'épaissit */
     border: 3px solid #ffc0f0;
-
-    /* Déplace le bouton de 4px vers le haut */
     transform: translateY(-4px);
 }
 
 
-/* Bouton de la page actuelle */
+/* Différencie le bouton de la page actuelle */
 
 .actif {
     color: #ff007b;
     border-color: #f8739d;
-
-    /* Met le texte en gras pour différencier la page actuelle */
     font-weight: bold;
 }
 
 
-/* Contenu */
+/* Contenu principal */
 
 main {
     width: 88%;
@@ -152,49 +138,32 @@ p {
 
 main img {
     width: 350px;
-
-    /* Arrondit les coins de l'image */
     border-radius: 10px;
-
-    /* Ajoute un trait blanc autour de l'image */
     border: 3px solid white;
 }
 
 
-/* Image à gauche */
+/* Image à gauche et texte à droite */
 
 .image-gauche {
-
-    /* Place l'image et le texte côte à côte */
     display: flex;
-
-    /* Centre verticalement l'image et le texte */
     align-items: center;
-
-    /* Ajoute un espace de 40px entre l'image et le texte */
     gap: 40px;
-
     margin-top: 30px;
     margin-bottom: 40px;
 }
 
 
-/* Image à droite */
+/* Image à droite et texte à gauche */
 
 .image-droite {
-
-    /* Place l'image et le texte côte à côte */
     display: flex;
 
-    /* Inverse l'ordre pour mettre l'image à droite et le texte à gauche */
+    /* Inverse l'ordre des éléments pour placer l'image à droite */
     flex-direction: row-reverse;
 
-    /* Centre verticalement l'image et le texte */
     align-items: center;
-
-    /* Ajoute un espace de 40px entre l'image et le texte */
     gap: 40px;
-
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -203,16 +172,10 @@ main img {
 /* Grande image des mains des héros */
 
 .image-large {
-
-    /* Centre l'image et sa légende */
     text-align: center;
-
     margin-top: 40px;
     margin-bottom: 20px;
 }
-
-
-/* Taille de la grande image des mains */
 
 .image-large img {
     width: 90%;
@@ -222,16 +185,10 @@ main img {
 /* Grande image de l'équipe */
 
 .image-equipe {
-
-    /* Centre l'image et sa légende */
     text-align: center;
-
     margin-top: 50px;
     margin-bottom: 60px;
 }
-
-
-/* Taille de l'image de l'équipe */
 
 .image-equipe img {
     width: 60%;
@@ -251,7 +208,7 @@ main img {
 .sources a {
     color: #df4aa5;
 
-    /* Chaque lien prend sa propre ligne */
+    /* Affiche chaque source sur une nouvelle ligne */
     display: block;
 
     margin-bottom: 10px;
@@ -269,11 +226,10 @@ main img {
 /* Pied de page */
 
 footer {
-    background: linear-gradient(to right, #35173f, #172f5c); /* Dégradé de couleur du pied de page */
+    background: linear-gradient(to right, #35173f, #172f5c);
     text-align: center;
     padding: 25px;
 }
-
 
 footer p {
     font-size: 15px;
@@ -281,7 +237,7 @@ footer p {
 }
 
 
-/* Version Téléphone */
+/* ---------------- VERSION TÉLÉPHONE ---------------- */
 
 @media (max-width: 600px) {
 
@@ -292,25 +248,16 @@ footer p {
     }
 
 
-    /* Titre principal */
+    /* Titre et logo passent l'un sous l'autre */
 
     h1 {
         font-size: 32px;
-
-        /* Remplace le flex pour mettre le titre et le logo l'un sous l'autre */
         display: block;
     }
 
-
-    /* Logo Atari ST */
-
     h1 img {
         width: 200px;
-
-        /* Le logo se comporte comme un élément bloc */
         display: block;
-
-        /* Centre le logo horizontalement */
         margin: auto;
     }
 
@@ -327,10 +274,7 @@ footer p {
     /* Boutons du menu */
 
     .bouton {
-
-        /* Permet aux boutons d'être côte à côte tout en gardant leur forme de bouton */
         display: inline-block;
-
         margin-right: 5px;
         margin-bottom: 15px;
         font-size: 14px;
@@ -343,27 +287,19 @@ footer p {
         width: 88%;
     }
 
-
-    /* Titres des parties */
-
     h2 {
         font-size: 22px;
     }
-
-
-    /* Texte */
 
     p {
         font-size: 16px;
     }
 
 
-    /* Images et textes */
+    /* Les images et les textes passent l'un sous l'autre */
 
     .image-gauche,
     .image-droite {
-
-        /* Remplace le flex pour mettre l'image et le texte l'un sous l'autre */
         display: block;
     }
 
@@ -373,9 +309,6 @@ footer p {
     main img {
         width: 100%;
     }
-
-
-    /* Grandes images adaptées à la largeur du téléphone */
 
     .image-large img,
     .image-equipe img {
