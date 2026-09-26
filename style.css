@@ -9,7 +9,7 @@
 /* Page */
 
 body {
-    background: linear-gradient(to right, #35173f, #172f5c); /* Dégradé de couleur du fond de la page globale */
+    background: linear-gradient(to right, #35173f, #172f5c); /* Dégradé de couleur du fond de la page */
     color: white;
     font-family: "Oswald";
     margin: 0;
@@ -34,9 +34,10 @@ h1 {
     /* Met le texte et le logo sur la même ligne */
     display: flex;
 
-    /* Centre le logo par rapport au texte */
+    /* Aligne verticalement le texte et le logo au centre */
     align-items: center;
 
+    /* Ajoute un espace de 20px entre le titre et le logo */
     gap: 20px;
 }
 
@@ -74,10 +75,10 @@ header p {
     padding: 10px;
     text-decoration: none;
 
-    /* Permet au bouton de bouger */
+    /* Garde les boutons sur la même ligne tout en pouvant modifier leur taille et leur espacement */
     display: inline-block;
 
-    /* Rend l'animation fluide */
+    /* Rend les changements du bouton progressifs pendant 0,3 seconde */
     transition: 0.3s;
 }
 
@@ -93,19 +94,18 @@ header p {
 
 .bouton:hover,
 .lien-bas a:hover {
+
     /* Change la couleur du texte */
     color: #ffc0f0;
 
     /* Change la couleur du fond */
     background-color: #ff007b;
 
-    /* Change la couleur de la bordure et l'épaissie */
-
+    /* Change la couleur de la bordure et l'épaissit */
     border: 3px solid #ffc0f0;
 
-    /* Fait légèrement monter le bouton */
+    /* Déplace le bouton de 4px vers le haut */
     transform: translateY(-4px);
-
 }
 
 
@@ -114,6 +114,8 @@ header p {
 .actif {
     color: #ff007b;
     border-color: #f8739d;
+
+    /* Met le texte en gras pour différencier la page actuelle */
     font-weight: bold;
 }
 
@@ -162,12 +164,16 @@ main img {
 /* Image à gauche */
 
 .image-gauche {
+
+    /* Place l'image et le texte côte à côte */
     display: flex;
 
-    /* Centre le texte par rapport à l'image */
+    /* Centre verticalement l'image et le texte */
     align-items: center;
 
+    /* Ajoute un espace de 40px entre l'image et le texte */
     gap: 40px;
+
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -176,15 +182,19 @@ main img {
 /* Image à droite */
 
 .image-droite {
+
+    /* Place l'image et le texte côte à côte */
     display: flex;
 
-    /* Met l'image à droite et le texte à gauche */
+    /* Inverse l'ordre pour mettre l'image à droite et le texte à gauche */
     flex-direction: row-reverse;
 
-    /* Centre le texte par rapport à l'image */
+    /* Centre verticalement l'image et le texte */
     align-items: center;
 
+    /* Ajoute un espace de 40px entre l'image et le texte */
     gap: 40px;
+
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -193,6 +203,7 @@ main img {
 /* Grande image des mains des héros */
 
 .image-large {
+
     /* Centre l'image et sa légende */
     text-align: center;
 
@@ -211,6 +222,7 @@ main img {
 /* Grande image de l'équipe */
 
 .image-equipe {
+
     /* Centre l'image et sa légende */
     text-align: center;
 
@@ -238,7 +250,10 @@ main img {
 
 .sources a {
     color: #df4aa5;
-    display: block; /* Chaque lien prend sa propre ligne */
+
+    /* Chaque lien prend sa propre ligne */
+    display: block;
+
     margin-bottom: 10px;
 }
 
@@ -281,6 +296,8 @@ footer p {
 
     h1 {
         font-size: 32px;
+
+        /* Remplace le flex pour mettre le titre et le logo l'un sous l'autre */
         display: block;
     }
 
@@ -289,7 +306,12 @@ footer p {
 
     h1 img {
         width: 200px;
+
+        /* Le logo se comporte comme un élément bloc */
         display: block;
+
+        /* Centre le logo horizontalement */
+        margin: auto;
     }
 
 
@@ -305,7 +327,10 @@ footer p {
     /* Boutons du menu */
 
     .bouton {
+
+        /* Permet aux boutons d'être côte à côte tout en gardant leur forme de bouton */
         display: inline-block;
+
         margin-right: 5px;
         margin-bottom: 15px;
         font-size: 14px;
@@ -333,10 +358,12 @@ footer p {
     }
 
 
-    /* Les images et les textes passent l'un sous l'autre */
+    /* Images et textes */
 
     .image-gauche,
     .image-droite {
+
+        /* Remplace le flex pour mettre l'image et le texte l'un sous l'autre */
         display: block;
     }
 
@@ -348,7 +375,7 @@ footer p {
     }
 
 
-    /* Grandes images adaptées au téléphone */
+    /* Grandes images adaptées à la largeur du téléphone */
 
     .image-large img,
     .image-equipe img {
